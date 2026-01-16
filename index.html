@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash Raj | Video Editor & Motion Designer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Courier New', 'monospace'],
+                    },
+                    colors: {
+                        'bg-dark': '#020617',
+                        'accent-indigo': '#6366f1',
+                        'accent-purple': '#a855f7',
+                        'border-slate': '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/css">
+        body {
+            background-color: #020617;
+            color: #e2e8f0;
+        }
+
+        .bg-glow-top {
+            position: fixed; top: -10%; left: -10%; width: 40%; height: 40%;
+            background: rgba(67, 56, 202, 0.1); border-radius: 50%; filter: blur(120px);
+            pointer-events: none; z-index: 0;
+        }
+        
+        .bg-glow-bottom {
+            position: fixed; bottom: -10%; right: -10%; width: 40%; height: 40%;
+            background: rgba(124, 58, 237, 0.1); border-radius: 50%; filter: blur(120px);
+            pointer-events: none; z-index: 0;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #6366f1, #a855f7, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .skill-segment {
+            height: 6px;
+            flex: 1;
+            border-radius: 9999px;
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+        }
+        
+        .skill-segment.empty {
+            background: #1e293b;
+            opacity: 0.3;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <div class="bg-glow-top"></div>
+    <div class="bg-glow-bottom"></div>
+
+    <div id="main-content" class="container mx-auto max-w-5xl px-6 py-12 relative z-10 fade-in">
+        
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-24">
+            <div class="max-w-2xl">
+                <h1 class="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase leading-none mb-6">
+                    PRAKASH <span class="gradient-text">RAJ</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-400 leading-relaxed">
+                    Video Editor and Motion Graphics Designer specialized in <span class="text-white font-medium underline decoration-accent-indigo underline-offset-8">social media storytelling</span> and cinematic narratives.
+                </p>
+            </div>
+            
+            <div class="font-mono text-xs border-l border-border-slate pl-6 flex flex-col gap-3">
+                <a href="mailto:prakashraj6502@gmail.com" class="text-slate-400 hover:text-white transition-colors">prakashraj6502@gmail.com</a>
+                <div class="text-slate-400">+91 8248743311</div>
+                <div class="text-slate-400">Chennai, India</div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <!-- Sidebar -->
+            <aside class="lg:col-span-4 flex flex-col gap-16">
+                
+                <!-- Skills -->
+                <section>
+                    <div class="flex items-center gap-3 mb-8 text-xs font-black text-white tracking-widest uppercase">
+                        <div class="w-8 h-px bg-accent-indigo"></div> CORE COMPETENCE
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="skill-group">
+                            <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Motion Graphics</span>
+                            <div class="flex gap-1.5">
+                                <div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Documentary Style</span>
+                            <div class="flex gap-1.5">
+                                <div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Short-Form Content</span>
+                            <div class="flex gap-1.5">
+                                <div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Color Grading</span>
+                            <div class="flex gap-1.5">
+                                <div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment"></div><div class="skill-segment empty"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Philosophy -->
+                <section class="bg-slate-900/50 border border-slate-800/50 p-6 rounded-2xl backdrop-blur-xl">
+                    <div class="text-xs font-black text-white tracking-widest uppercase mb-4">Philosophy</div>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">
+                        "Visual storytelling isn't just about cuts; it's about rhythm, retention, and psychology. Every frame should justify its existence."
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-slate-800">
+                        <p class="text-[10px] font-mono uppercase text-slate-500 mb-3">Toolkit</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-slate-800 border border-slate-700 px-2 py-1 rounded text-slate-300">Premiere Pro</span>
+                            <span class="text-[10px] bg-slate-800 border border-slate-700 px-2 py-1 rounded text-slate-300">After Effects</span>
+                            <span class="text-[10px] bg-slate-800 border border-slate-700 px-2 py-1 rounded text-slate-300">DaVinci Resolve</span>
+                            <span class="text-[10px] bg-slate-800 border border-slate-700 px-2 py-1 rounded text-slate-300">Photoshop</span>
+                            <span class="text-[10px] bg-slate-800 border border-slate-700 px-2 py-1 rounded text-slate-300">AI Workflows</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col gap-4">
+                    <a href="https://www.linkedin.com/in/prakashraj2709/" target="_blank" class="flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold text-sm bg-accent-indigo text-white shadow-lg shadow-indigo-500/20 hover:bg-indigo-500 transition-all active:scale-[0.98]">
+                        Connect on LinkedIn
+                    </a>
+                    <a href="#" class="flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold text-sm bg-slate-900 text-white border border-slate-700 hover:bg-slate-800 transition-all active:scale-[0.98]">
+                        View Portfolio
+                    </a>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="lg:col-span-8 flex flex-col gap-16">
+                
+                <!-- Experience -->
+                <section>
+                    <div class="flex items-center gap-3 mb-12 text-xs font-black text-white tracking-widest uppercase">
+                        <div class="w-8 h-px bg-accent-indigo"></div> Professional Experience
+                    </div>
+
+                    <div class="space-y-12">
+                        <!-- Experience 1 -->
+                        <div class="relative pl-8 border-l-2 border-accent-indigo">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent-indigo shadow-[0_0_15px_rgba(99,102,241,0.6)]"></div>
+                            <div class="flex flex-wrap justify-between items-center mb-2 gap-4">
+                                <h3 class="text-2xl font-bold text-white uppercase tracking-tight">Senior Video Editor</h3>
+                                <span class="text-[10px] font-mono px-2 py-1 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 rounded">Nov 2025 – Present</span>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-300 mb-2">Infinity Canvas | Marketing Agency</p>
+                            <p class="text-sm text-slate-400 italic mb-6">Lead editor for India's top immigration consultants, engineering high-clarity visual narratives.</p>
+                            <ul class="space-y-4">
+                                <li class="text-sm text-slate-400 leading-relaxed flex gap-3">
+                                    <span class="text-accent-indigo font-bold">/</span>
+                                    <span>Synthesized complex visa procedures into minimalist, motion-driven educational content.</span>
+                                </li>
+                                <li class="text-sm text-slate-400 leading-relaxed flex gap-3">
+                                    <span class="text-accent-indigo font-bold">/</span>
+                                    <span>Mastered quick-turnaround post-production for high-stakes international accounts.</span>
+                                </li>
+                                <li class="text-sm text-slate-400 leading-relaxed flex gap-3">
+                                    <span class="text-accent-indigo font-bold">/</span>
+                                    <span>Mentoring a squad of 3 editors on creative direction and technical workflow optimization.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Experience 2 -->
+                        <div class="relative pl-8 border-l-2 border-slate-800">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700"></div>
+                            <div class="flex flex-wrap justify-between items-center mb-2 gap-4">
+                                <h3 class="text-2xl font-bold text-white uppercase tracking-tight">Video Editor / Post Production</h3>
+                                <span class="text-[10px] font-mono px-2 py-1 bg-slate-800 border border-slate-700 text-slate-400 rounded">Oct 2024 – Sep 2025</span>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-300 mb-2">LMES Academy</p>
+                            <p class="text-sm text-slate-400 italic mb-6">Retention architect for educational YouTube and digital advertising.</p>
+                            <ul class="space-y-4">
+                                <li class="text-sm text-slate-400 leading-relaxed flex gap-3">
+                                    <span class="text-slate-600 font-bold">/</span>
+                                    <span>Scaled engagement through high-retention editing techniques and narrative pacing.</span>
+                                </li>
+                                <li class="text-sm text-slate-400 leading-relaxed flex gap-3">
+                                    <span class="text-slate-600 font-bold">/</span>
+                                    <span>Designed data-backed thumbnails resulting in improved Click-Through Rates.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <div class="flex items-center gap-3 mb-12 text-xs font-black text-white tracking-widest uppercase">
+                        <div class="w-8 h-px bg-accent-indigo"></div> Education
+                    </div>
+                    <div class="relative pl-8 border-l-2 border-slate-800">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700"></div>
+                        <div class="flex flex-wrap justify-between items-center mb-2 gap-4">
+                            <h3 class="text-2xl font-bold text-white uppercase tracking-tight">B.Sc Visual Communication</h3>
+                            <span class="text-[10px] font-mono px-2 py-1 bg-slate-800 border border-slate-700 text-slate-400 rounded">2017 – 2020</span>
+                        </div>
+                        <p class="text-sm font-semibold text-slate-300 mb-2">A.M. Jain College</p>
+                        <p class="text-sm text-slate-400">Specialized in digital media, cinematography, and graphic design foundations.</p>
+                    </div>
+                </section>
+
+                <footer class="mt-12 pt-12 border-t border-slate-900 text-center">
+                    <p class="text-[10px] font-mono text-slate-600 tracking-widest uppercase">
+                        © 2026 PRAKASH RAJ
+                    </p>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Trigger initial fade-in
+        window.addEventListener('DOMContentLoaded', () => {
+            const content = document.getElementById('main-content');
+            setTimeout(() => {
+                content.classList.add('visible');
+            }, 100);
+        });
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Observe elements
+        document.querySelectorAll('section, header').forEach(el => {
+            if (!el.classList.contains('fade-in')) {
+                el.classList.add('fade-in');
+            }
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
